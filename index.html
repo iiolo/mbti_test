@@ -48,6 +48,13 @@
             </button>
         </article>
 
+        <!-- 결과 화면 -->
+        <article class="result">
+            <img id="img" src="" alt="" />
+            <h2 id="animal">동물이름</h2>
+            <h3 id="explain">설명</h3>
+        </article>
+
         <input type="hidden" id="EI" value="0" />
         <input type="hidden" id="SN" value="0" />
         <input type="hidden" id="TF" value="0" />
@@ -107,6 +114,11 @@
 
             // 다음 문제로 넘어가는 함수 만들기(문제랑 버튼들이 다음 문제에 해당하는 것으로 변경됨)
             function next() {
+                if (num == 13 /*마지막 문제에서 다음버튼 클릭시 */) {
+                    $('.question').hide();
+                    $('.result').show();
+                }
+
                 $('.progress-bar').attr(
                     'style',
                     'width: calc(100 / 12 * ' + num + '%)'
