@@ -38,6 +38,7 @@
             </div>
             <h2 class="text-center mt-5">문제</h2>
             <input id="type" type="hidden" value="EI" />
+            <!--아떤 type의 문제인지-->
             <button id="A" type="button" class="btn btn-primary mt-5">
                 Primary
             </button>
@@ -50,6 +51,7 @@
         <input type="hidden" id="SN" value="0" />
         <input type="hidden" id="TF" value="0" />
         <input type="hidden" id="JP" value="0" />
+
         <script
             src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -61,11 +63,23 @@
             crossorigin="anonymous"
         ></script>
         <script>
+            // 문제 객체에서 정보 가져오기
+            var num = 1;
+
+            // 문제 정보를 객체로 만들기
+            var q = {
+                //EI
+                1: { title: '문제 1번', type: 'EI', A: 'E', B: 'I' },
+                2: { title: '문제 2번', type: 'EI', A: 'E', B: 'I' },
+                3: { title: '문제 3번', type: 'EI', A: 'E', B: 'I' },
+            };
+
             function start() {
                 $('.start').hide();
                 $('.question').show();
             }
 
+            // A버튼을 눌렀을 때만 value 값 +1
             $('#A').click(function () {
                 var type = $('#type').val();
                 var preValue = $('#' + type).val();
