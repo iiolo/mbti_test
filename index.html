@@ -93,6 +93,21 @@
                 12: { title: '문제 12번', type: 'JP', A: 'J', B: 'P' },
             };
 
+            // mbti 결과를 객체로 저장
+            var result = {
+                ISTJ: { animal: '하마', explain: '하마 설명', img: 'lion.jpg' },
+                ENFP: {
+                    animal: '멋쟁이 사자',
+                    explain: '멋쟁이 사자 설명',
+                    img: 'lion.jpg',
+                },
+                ENTJ: {
+                    animal: '호랑이',
+                    explain: '호랑이 설명',
+                    img: 'lion.jpg',
+                },
+            };
+
             function start() {
                 $('.start').hide();
                 $('.question').show();
@@ -126,6 +141,15 @@
                     $('#JP').val() < 2 ? (mbti += 'P') : (mbti += 'J'); // JP
 
                     alert(mbti);
+
+                    // 이미지 주소
+                    $('#img').attr('src', result[mbti]['img']); //result의 mbti라는 key의 value 안 객체 속 img라는 key의 value
+
+                    // 동물 이름
+                    $('#animal').html(result[mbti]['animal']);
+
+                    // 설명
+                    $('#explain').html(result[mbti]['explain']);
                 } else {
                     $('.progress-bar').attr(
                         'style',
