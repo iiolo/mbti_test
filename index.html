@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body class="container">
+        <!-- 시작화면 -->
         <article class="start">
             <h1 class="mt-5 text-center">나와 닮은 곰돌이 형제는?</h1>
             <button
@@ -25,6 +26,7 @@
             </button>
         </article>
 
+        <!-- 문제화면 -->
         <article class="question">
             <div class="progress">
                 <div
@@ -140,7 +142,7 @@
                     $('#TF').val() < 2 ? (mbti += 'F') : (mbti += 'T'); // TF
                     $('#JP').val() < 2 ? (mbti += 'P') : (mbti += 'J'); // JP
 
-                    alert(mbti);
+                    // alert(mbti); //test용
 
                     // 이미지 주소
                     $('#img').attr('src', result[mbti]['img']); //result의 mbti라는 key의 value 안 객체 속 img라는 key의 value
