@@ -35,3 +35,15 @@ article {
     width: 320px;
     margin: 0 auto;
 }
+
+/* 외부광고 */
+.banner {
+    display: flex;
+    justify-content: center; /*a 태그 자식들 가운데 정렬*/
+    width: 300px;
+    margin: 0 auto; /*a태그 자체 가운데 정렬*/
+}
+
+.banner-img {
+    width: 300px;
+}
