@@ -22,11 +22,13 @@ body {
 article {
     display: flex;
     flex-direction: column;
-}
-.start {
-    width: 400px;
-    margin: 0 auto;
     background-color: white;
+}
+
+.start button {
+    margin: 0 auto;
+    width: 300px;
+    background-color: #F299A0;
 }
 
 #title_text {
