@@ -48,7 +48,7 @@
 
         <!-- 시작화면 -->
         <article class="start">
-            <h1 class="mt-5 text-center" id="title_text">
+            <h1 class="mt-5 text-center" id="title_text" style="color: #3a4538">
                 나와 닮은 곰돌이는?
             </h1>
             <img
@@ -78,25 +78,51 @@
                     aria-valuemax="100"
                 ></div>
             </div>
-            <div class="qBox mt-5">
-                <p id="title" class="text-center mt-5">문제</p>
+            <div class="qBox mt-3">
+                <p id="title" class="text-center" style="color: #3a4538">
+                    문제
+                </p>
             </div>
             <input id="type" type="hidden" value="EI" />
 
             <!--아떤 type의 문제인지-->
-            <button id="A" type="button" class="btn mt-5">Primary</button>
+            <button id="A" type="button" class="btn mt-3">Primary</button>
             <button id="B" type="button" class="btn mt-2">Primary</button>
         </article>
 
         <!-- 결과 화면 -->
         <article class="result">
             <img id="img" class="mt-5" src="result/lion.jpg" alt="animal" />
-            <h2 id="animal" class="text-center mt-5">동물이름</h2>
-            <h3 id="explain" class="text-center mt-5">설명</h3>
 
-            <!-- SNS 공유 기능 -->
-            <!-- Go to www.addthis.com/dashboard to customize your tools -->
-            <div class="share addthis_inline_share_toolbox"></div>
+            <h2 id="animal" class="text-center mt-3" style="color: #3a4538">
+                동물이름
+            </h2>
+            <h4
+                id="pre"
+                class="text-center mt-1"
+                style="
+                    color: #3a4538;
+                    font-family: sans-serif;
+                    font-weight: bold;
+                "
+            >
+                mbti
+            </h4>
+            <div
+                class="eBox mt-2"
+                style="border-radius: 10px; background-color: #5eb95d"
+            >
+                <p
+                    id="explain"
+                    class="text-center mt-2"
+                    style="color: white; font-family: sans-serif"
+                >
+                    설명
+                </p>
+                <!-- SNS 공유 기능 -->
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="share addthis_inline_share_toolbox mb-2"></div>
+            </div>
         </article>
 
         <!-- 광고 배너 -->
@@ -223,83 +249,100 @@
             var result = {
                 ISFP: {
                     animal: '잠꾸러기 곰돌이',
+                    pre: 'ISFP',
                     explain: '잠꾸러기 곰돌이 설명',
                     img: 'result/ISFP.png',
                 },
                 ISFJ: {
                     animal: '다정한 곰돌이',
+                    pre: 'ISFJ',
                     explain: '다정한 곰돌이 설명',
                     img: 'result/ISFJ.png',
                 },
                 ISTP: {
                     animal: '냉철한 곰돌이',
+                    pre: 'ISTP',
                     explain: '냉철한 곰돌이 설명',
                     img: 'result/ISTP.png',
                 },
                 ISTJ: {
                     animal: '침착한 곰돌이',
+                    pre: 'ISTJ',
                     explain: '침착한 곰돌이 설명',
                     img: 'result/ISTJ.png',
                 },
                 INFP: {
                     animal: '용감한 곰돌이',
+                    pre: 'INFP',
+
                     explain: '용감한 곰돌이 설명',
                     img: 'result/INFP.png',
                 },
                 INFJ: {
                     animal: '사려깊은 곰돌이',
+                    pre: 'INFJ',
                     explain: '사려깊은 곰돌이 설명',
                     img: 'result/INFJ.png',
                 },
                 INTP: {
                     animal: '느긋한 곰돌이',
+                    pre: 'INTP',
                     explain: '느긋한 곰돌이 설명',
                     img: 'result/INTP.png',
                 },
                 INTJ: {
                     animal: '지적인 곰돌이',
+                    pre: 'INTJ',
                     explain: '지적인 곰돌이 설명',
                     img: 'result/INTJ.png',
                 },
 
                 ESFP: {
                     animal: '잘 노는 곰돌이',
+                    pre: 'ESFP',
                     explain: '잘 노는 곰돌이 설명',
                     img: 'result/ESFP.png',
                 },
                 ESFJ: {
                     animal: '인싸 곰돌이',
+                    pre: 'ESFJ',
                     explain: '인싸 곰돌이 설명',
                     img: 'result/ESFJ.png',
                 },
                 ESTP: {
                     animal: '장난스러운 곰돌이',
+                    pre: 'ESTP',
                     explain: '장난스러운 곰돌이 설명',
                     img: 'result/ESTP.png',
                 },
                 ESTJ: {
                     animal: '단호한 곰돌이',
+                    pre: 'ESTJ',
                     explain: '단호한 곰돌이 설명',
                     img: 'result/ESTJ.png',
                 },
 
                 ENFP: {
                     animal: '발랄한 곰돌이',
+                    pre: 'ENFP',
                     explain: '발랄한 곰돌이 설명',
                     img: 'result/ENFP.png',
                 },
                 ENFJ: {
                     animal: '친절한 곰돌이',
+                    pre: 'ENFJ',
                     explain: '친절한한 곰돌이 설명',
                     img: 'result/ENFJ.png',
                 },
                 ENTP: {
                     animal: '발랄한 곰돌이',
+                    pre: 'ENTP',
                     explain: '발랄한 곰돌이 설명',
                     img: 'result/ENTP.png',
                 },
                 ENTJ: {
                     animal: '카리스마 곰돌이',
+                    pre: 'ENTJ',
                     explain: '호랑이 설명',
                     img: 'result/ENTJ.png',
                 },
@@ -341,6 +384,9 @@
 
                     // 이미지 주소
                     $('#img').attr('src', result[mbti]['img']); //result의 mbti라는 key의 value 안 객체 속 img라는 key의 value
+
+                    //mbti
+                    $('#pre').html(result[mbti]['pre']);
 
                     // 동물 이름
                     $('#animal').html(result[mbti]['animal']);

@@ -1,6 +1,6 @@
 :root {
-    --btn-color: #845B00;
-    --accent-color: #7FD1AE;
+    --btn-color: #5EB95D;
+    --accent-color: #547C50;
     --background-color: #fff;
     --border-radius: 10px;
     --border-width: 3px;
@@ -40,7 +40,7 @@ article {
 .start button {
     margin: 0 auto;
     width: 300px;
-    background-color: var(--accent-color);
+    background-color: var(--btn-color);
 }
 
 
@@ -71,7 +71,9 @@ article {
 }
 
 #img {
-    border-radius: 40px 80px / 80px 40px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: solid 6px var(--btn-color);
     width: 300px;
     height: 300px;
     margin: 0 auto;
@@ -79,6 +81,11 @@ article {
 
 .share {
     margin: 0 auto;
+    text-align: center; 
+    width: fit-content;
+    padding: 10px;
+    border-radius: 30px;
+    border: dashed 6px white;
 }
 
 .kakao_ad {
