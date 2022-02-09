@@ -1,6 +1,13 @@
+:root {
+    --btn-color: #8C8C8B;
+    --accent-color: #F299A0;
+}
+
 * {
     font-family: 'Gamja Flower', cursive;
 }
+
+
 
 body {
     background-image: url(background.jpg);
@@ -8,7 +15,7 @@ body {
 }
 
 .btn {
-    background-color: #8C8C8B;
+    background-color: var(--btn-color);
     color: white;
 }
 
@@ -16,11 +23,14 @@ article {
     display: flex;
     flex-direction: column;
 }
-
-.first-page {
-    width: 300px;
-    height: 300px;
+.start {
+    width: 400px;
     margin: 0 auto;
+    background-color: white;
+}
+
+#title_text {
+    font-family: 'Jua', sans-serif;
 }
 
 .question {
