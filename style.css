@@ -22,10 +22,12 @@ body {
 article {
     display: flex;
     flex-direction: column;
-    background-color: white;
     padding: 20px 0 30px;
 }
 
+.start {
+    background-color: white;
+}
 .start button {
     margin: 0 auto;
     width: 300px;
