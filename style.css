@@ -9,10 +9,10 @@
 
 
 
-body {
+/* body {
     background-image: url(background.jpg);
     background-size: 130%;
-}
+} */
 
 .btn {
     background-color: var(--btn-color);
@@ -25,9 +25,6 @@ article {
     padding: 20px 0 30px;
 }
 
-.start {
-    background-color: white;
-}
 .start button {
     margin: 0 auto;
     width: 300px;
