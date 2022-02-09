@@ -12,6 +12,7 @@
     word-break: keep-all;
 }
 
+
 p {
     display: block;
     margin-block-start: 1em;
@@ -71,9 +72,8 @@ article {
 }
 
 #img {
-    box-sizing: border-box;
     border-radius: 30px;
-    border: solid 6px var(--btn-color);
+    border: solid 8px var(--btn-color);
     width: 300px;
     height: 300px;
     margin: 0 auto;
