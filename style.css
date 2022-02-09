@@ -15,13 +15,6 @@ p {
     margin-inline-end: 0px;
 }
 
-h3 {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
 
 /* body {
     background-image: url(background.jpg);
@@ -64,6 +57,10 @@ article {
     padding: var(--spacing-12);
     width: 100%;
     background-color: var(--background-color);
+}
+
+.question button {
+    font-size: 0.8em;
 }
 
 .result {
