@@ -23,7 +23,7 @@ article {
     display: flex;
     flex-direction: column;
     background-color: white;
-    padding: 20px 0;
+    padding: 20px 0 30px;
 }
 
 .start button {
@@ -46,6 +46,8 @@ article {
 
 .result {
     display: none;
+    width: 500px;
+    margin: 0 auto;
 }
 
 #img {
