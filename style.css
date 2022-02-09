@@ -12,6 +12,12 @@ article {
     flex-direction: column;
 }
 
+.first-page {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
 .question {
     display: none;
 }
