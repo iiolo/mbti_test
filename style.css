@@ -23,6 +23,7 @@ article {
     display: flex;
     flex-direction: column;
     background-color: white;
+    padding: 20px 0;
 }
 
 .start button {
