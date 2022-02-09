@@ -37,6 +37,10 @@ article {
     display: none;
 }
 
+.progress-bar{
+    background-color:var(--btn-color);
+}
+
 .result {
     display: none;
 }
