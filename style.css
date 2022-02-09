@@ -1,6 +1,4 @@
 :root {
-    --spacing-px: "1px";
-    --spacing-12: 3rem;
     --btn-color: #845B00;
     --accent-color: #7FD1AE;
     --background-color: #fff;
@@ -11,6 +9,7 @@
 
 * {
     font-family: 'Jua', sans-serif;
+    word-break: keep-all;
 }
 
 p {
@@ -57,7 +56,7 @@ article {
     border-radius: var(--border-radius);
     border: solid var(--border-width) var(--btn-color);
     text-align: center;
-    padding: var(--spacing-12);
+    padding: 1.5rem;
     width: 100%;
     background-color: var(--background-color);
 }
