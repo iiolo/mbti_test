@@ -7,7 +7,21 @@
     font-family: 'Gamja Flower', cursive;
 }
 
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 
+h3 {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 
 /* body {
     background-image: url(background.jpg);
@@ -41,6 +55,15 @@ article {
 
 .progress-bar{
     background-color:var(--btn-color);
+}
+
+.qBox {
+    border-radius: var(--border-radius);
+    border: solid var(--border-width) var(--color-text);
+    text-align: center;
+    padding: var(--spacing-12);
+    width: 100%;
+    background-color: var(--background-color);
 }
 
 .result {
