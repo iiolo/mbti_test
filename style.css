@@ -7,6 +7,11 @@ body {
     background-size: 130%;
 }
 
+.btn {
+    background-color: #8C8C8B;
+    color: white;
+}
+
 article {
     display: flex;
     flex-direction: column;
