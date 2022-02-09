@@ -1,6 +1,12 @@
 :root {
-    --btn-color: #8C8C8B;
-    --accent-color: #F299A0;
+    --spacing-px: "1px";
+    --spacing-12: 3rem;
+    --btn-color: #845B00;
+    --accent-color: #7FD1AE;
+    --background-color: #fff;
+    --border-radius: 10px;
+    --border-width: 3px;
+
 }
 
 * {
@@ -35,7 +41,8 @@ article {
 .start button {
     margin: 0 auto;
     width: 300px;
-    background-color: #F299A0;
+    background-color: var(--accent-color);
+    font-family: 'Jua', sans-serif;
 }
 
 #title_text {
@@ -47,12 +54,12 @@ article {
 }
 
 .progress-bar{
-    background-color:var(--btn-color);
+    background-color:var(--accent-color);
 }
 
 .qBox {
     border-radius: var(--border-radius);
-    border: solid var(--border-width) var(--color-text);
+    border: solid var(--border-width) var(--btn-color);
     text-align: center;
     padding: var(--spacing-12);
     width: 100%;
@@ -61,6 +68,7 @@ article {
 
 .question button {
     font-size: 0.8em;
+    border-radius: var(--border-radius);
 }
 
 .result {
