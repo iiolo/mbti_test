@@ -10,7 +10,7 @@
 }
 
 * {
-    font-family: 'Gamja Flower', cursive;
+    font-family: 'Jua', sans-serif;
 }
 
 p {
@@ -42,12 +42,8 @@ article {
     margin: 0 auto;
     width: 300px;
     background-color: var(--accent-color);
-    font-family: 'Jua', sans-serif;
 }
 
-#title_text {
-    font-family: 'Jua', sans-serif;
-}
 
 .question {
     display: none;
