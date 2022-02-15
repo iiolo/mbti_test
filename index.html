@@ -56,10 +56,29 @@
             gtag('config', 'G-F4X0413S2E');
         </script>
 
+        <!-- CSS -->
         <link rel="stylesheet" href="style.css" />
     </head>
     <body class="container">
-        <div class="background"></div>
+        <!-- 캐시 메모리에 이미지 담아두기 -->
+        <article class="loading">
+            <img src="result/INFP.png" />
+            <img src="result/INFJ.png" />
+            <img src="result/ISFP.png" />
+            <img src="result/ISFJ.png" />
+            <img src="result/INTP.png" />
+            <img src="result/INTJ.png" />
+            <img src="result/ISTP.png" />
+            <img src="result/ISFJ.png" />
+            <img src="result/ENFP.png" />
+            <img src="result/ENFJ.png" />
+            <img src="result/ESFP.png" />
+            <img src="result/ESFJ.png" />
+            <img src="result/ENTP.png" />
+            <img src="result/ENTJ.png" />
+            <img src="result/ESTJ.png" />
+            <img src="result/ESTP.png" />
+        </article>
 
         <!-- 시작화면 -->
         <article class="start">
@@ -406,6 +425,7 @@
                 $('.start').hide();
                 $('.question').show();
                 next(); //처음 시작 버튼 눌렀을 때 시작화면 숨기고 문제화면을 보여주면서 바로 첫번째 문제가 나올 수 있도록 해주기
+                shareSNS();
             }
 
             // A버튼을 눌렀을 때만 value 값 +1
