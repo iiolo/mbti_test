@@ -1,6 +1,6 @@
 :root {
-    --btn-color: #5EB95D;
-    --accent-color: #547C50;
+    --btn-color: #735530;
+    --accent-color: #514538;
     --background-color: #fff;
     --border-radius: 10px;
     --border-width: 3px;
@@ -21,10 +21,10 @@ p {
     margin-inline-end: 0px;
 }
 
-/* body {
+body {
     background-image: url(background.jpg);
     background-size: 130%;
-} */
+}
 
 .btn {
     background-color: var(--btn-color);
